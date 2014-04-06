@@ -1,8 +1,8 @@
 extends src/jade/layout
 
 block body
-  a.pull-right(href='index.html')= lang.go_back
   h1= lang.title
+    a.btn.btn-info.pull-right(href='index.html')= lang.go_back
 
   .exam-paper(ng-controller='ExamCtrl')
     ul.list-group
