@@ -1,0 +1,18 @@
+extends src/jade/layout
+
+block body
+  h1= lang.title
+  form.form-horizontal(role='form', action='exam.html', method='get')
+    legend 题目数
+    +form-group('填空题数', 'Fill')
+    +form-group('单项选择题数', 'Radio')
+    +form-group('多项选择题数', 'Checkbox')
+    .form-group
+      button.btn.btn-primary.col-sm-offset-2(type='submit')= lang.ok
+
+mixin form-group(name, id)
+  - if (!id) id = name
+  .form-group
+    label.control-label.col-sm-2.col-xs-4(for=id)= name
+    .col-sm-10.col-xs-8
+      input.form-control(id=id, type='number', name=id, placeholder='请输入' + name)
