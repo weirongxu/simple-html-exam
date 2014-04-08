@@ -1,8 +1,5 @@
-USE
-===
+Simple-html-exam
+================
 
-coffeescript
-------------
-
-stylus
-------
+基于静态页的简单的考试系统。
+Simple examination system based on static pages.
