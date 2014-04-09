@@ -1,3 +1,4 @@
+rm -rf build
 mkdir build
 cp -R assets build/
 cp -R data build/

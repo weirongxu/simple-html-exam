@@ -3,6 +3,10 @@ var url = new URL(document.URL);
 
 examApp.controller('ExamCtrl', ['$scope', function($scope){
   var params = url.query;
+  if (_.isEmpty(params)) {
+    url.goto('index.html');
+    return;
+  }
   $scope.isMarked = false;
 
   $scope.fills = _.shuffle(window.data.fills).slice(0, params.Fill);

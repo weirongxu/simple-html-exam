@@ -51,7 +51,8 @@ window.URL.prototype = {
     this.link.search = q_str.join('&');
   },
   goto: function goto() {
-    window.location.href = this.link.href;
+    window.location.href = (arguments.length > 0) ?
+      arguments[0] : this.link.href;
   }
 };
 
