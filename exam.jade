@@ -42,4 +42,4 @@ block body
         div(ng-if='isMarked && !mark_checkbox(i)')
           span.label.label-success(ng-repeat='ans in checkbox.answer.split("")') {{'ABCDEF'[ans]}}
 
-    button.btn(ng-click='isMarked = isMarked ? false : true', ng-class='isMarked ? "btn-warning": "btn-primary"') {{isMarked ? '重做' : '交卷'}}
+    button.btn(ng-click='mark_btn()', ng-class='isMarked ? "btn-warning": "btn-primary"') {{isMarked ? '重做' : '交卷'}}

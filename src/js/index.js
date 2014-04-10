@@ -33,4 +33,12 @@ examApp.controller('ExamCtrl', ['$scope', function($scope){
     }
     return true;
   };
+
+  $scope.mark_btn = function(){
+    if ($scope.isMarked) {
+      location.reload();
+    } else {
+      $scope.isMarked = true;
+    }
+  };
 }]);
