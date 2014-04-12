@@ -3,7 +3,10 @@ include lib
 doctype html
 html(ng-app='exam')
   head
-    meta(charset='UTF-8')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='renderer', content='webkit')
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge,chrome=1')
     title= lang.title
     link(rel='stylesheet', href='assets/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='assets/css/index.min.css')
@@ -13,6 +16,9 @@ html(ng-app='exam')
       p.text-center &copy; &nbsp;
         a(href='https://github.com/weirongxu') Raidou
     script(src='assets/js/jquery-1.9.1.min.js')
+    <!--[if lt IE 8]>
+    script(src='assets/js/ie7.min.js')
+    <![endif]-->
     script(src='assets/js/angular.min.js')
     script(src='assets/bootstrap/js/bootstrap.min.js')
     script(src='data/data.js')

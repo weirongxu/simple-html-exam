@@ -17,7 +17,7 @@ block body
             input(type='text', ng-init='fill.ans[$index]=""', ng-model='fill.ans[$index]')
             | 、
         div(ng-if='isMarked && !mark_fill(i)')
-          span.label.label-success(ng-repeat='ans in fill.answers track by $index') {{ans}}
+          span.label.label-success(ng-repeat='ans in fill.answers track by $index', ng-if='ans') {{ans}}
 
       //- 单项选择题
       li.list-group-item.list-group-item-info

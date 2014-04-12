@@ -7,11 +7,13 @@ module.exports = function(grunt){
           beautify: 'true'
         },
         files: {
+          'assets/js/ie7.min.js': ['src/js/ie7.js'],
           'assets/js/index.min.js': ['src/js/lib/*.js', 'src/js/index.js']
         }
       },
       production: {
         files: {
+          'assets/js/ie7.min.js': ['src/js/ie7.js'],
           'assets/js/index.min.js': ['src/js/lib/*.js', 'src/js/index.js']
         }
       },
