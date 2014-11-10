@@ -1,8 +1,6 @@
 var examApp = angular.module('exam', []);
 var url = new URL(document.URL);
 
-$('')
-
 examApp.controller('ExamCtrl', ['$scope', function($scope){
   var params = url.query;
   if (_.isEmpty(params)) {
